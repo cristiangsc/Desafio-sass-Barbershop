@@ -1,0 +1,29 @@
+.button {
+    border: none;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: $font-size-large;
+    font-family: $font-roboto;
+    cursor: pointer;
+    @include button-color($nickel);
+    &-md {
+        padding: 13px 1.5rem;
+    }
+    &-sm {
+        padding: 13px 1.2rem;
+    }
+}
+
+.button:hover {
+    @include button-color( $platinum);
+}
+
+.button:active {
+    @include button-color($nickel);
+    border-style: double;
+    text-decoration: 1px solid $raisin-black;
+    padding: 10px 1.2rem;
+}

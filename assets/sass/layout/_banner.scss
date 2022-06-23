@@ -1,0 +1,31 @@
+.banner {
+    display: grid;
+    grid-template-rows: 700px;
+    grid-template-columns: 600px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/images/post-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__text {
+        color: $white;
+        font-family: $font-playfair;
+        font-size: $font-size-xx-large;
+        font-weight: 700;
+        text-align: center;
+        font-style: italic;
+        @include respond-to($bp-md) {
+            font-size: 60px;
+        }
+    }
+    &__arrows {
+        color: $white;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    @include respond-to($bp-md) {
+        grid-template-rows: 500px;
+        grid-template-columns: 500px;
+    }
+}

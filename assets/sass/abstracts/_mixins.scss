@@ -1,0 +1,13 @@
+@mixin button-color($color) {
+    background-color: $color !important;
+}
+
+@mixin link-color($color) {
+    color: $color !important;
+}
+
+@mixin respond-to($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content
+    }
+}

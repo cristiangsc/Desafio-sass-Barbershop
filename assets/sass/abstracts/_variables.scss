@@ -1,0 +1,28 @@
+/*colors*/
+
+$white:#FFF;
+$platinum:#E6E7E7;
+$light-gray:#D1D1D1;
+$fuzzy-wuzzy: #E56353;
+$ruddy-pink: #D76C69;
+$spanish-pink: #ECBCBA;
+$eerie-black: #121619;
+$raisin-black: #222323;
+$nickel: #6C6E70;
+
+/*breakpoints */
+
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+//font size setup
+$font-size-xx-large: 70px;
+$font-size-x-large: 30px;
+$font-size-large: 18px;
+$font-size-medium: 16px;
+$font-size-small: 14px;
+$font-size-x-small: 12px;
+//
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&display=swap');

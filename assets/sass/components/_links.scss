@@ -1,0 +1,26 @@
+.links {
+    font-size: $font-size-medium;
+    text-decoration: none;
+    cursor: pointer;
+    @include link-color($white);
+    &-primary {
+        @include link-color($ruddy-pink);
+    }
+    &-secondary {
+        @include link-color($nickel);
+    }
+    &-ligth {
+        @include link-color($light-gray);
+    }
+    &-dark {
+        @include link-color($raisin-black);
+    }
+}
+
+.links:hover {
+    @include link-color($nickel);
+}
+
+.links:active {
+    @include link-color($light-gray);
+}

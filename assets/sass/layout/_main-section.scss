@@ -1,0 +1,14 @@
+.parrafos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 50px;
+    line-height: 2rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+    gap: 20px;
+}

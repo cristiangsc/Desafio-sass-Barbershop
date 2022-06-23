@@ -1,0 +1,37 @@
+.profile {
+    display: grid;
+    grid-template-columns: 150px 250px auto;
+    grid-template-rows: 100px;
+    align-items: center;
+    padding: 50px 5%;
+    @include respond-to($bp-md) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .thumbnails-sm {
+            width: 100px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    &__name {
+        font-family: $font-playfair;
+        font-style: italic;
+        font-size: $font-size-x-large;
+        font-weight: 700;
+    }
+    &__followers {
+        display: flex;
+        flex-direction: column;
+    }
+    &__text {
+        line-height: 2rem;
+        @include respond-to($bp-md) {
+            display: none;
+        }
+    }
+}

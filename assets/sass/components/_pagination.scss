@@ -1,0 +1,47 @@
+ul.pagination {
+    display: inline-block;
+    font-family: $font-roboto;
+    padding: 0;
+    margin: 0;
+    & li {
+        display: inline;
+        & a {
+            color: $eerie-black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            background-color: $white;
+            transition: background-color .3s;
+            border: 1px solid $white;
+        }
+        & .active {
+            background-color: $nickel;
+            color: $white;
+            border: 1px solid $nickel;
+        }
+        & :hover:not(.active) {
+            background-color: $white;
+        }
+    }
+    & li:first-child a {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        font-weight: 300;
+    }
+    & li:last-child a {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        font-weight: 400;
+    }
+    @include respond-to($bp-md) {
+        li a {
+            color: $eerie-black;
+            float: left;
+            padding: 4px 10px;
+            font-size: $font-size-x-small;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid $white;
+        }
+    }
+}
